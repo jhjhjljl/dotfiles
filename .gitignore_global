@@ -1,0 +1,181 @@
+# ========================
+# macOS
+# ========================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+.AppleDB
+.AppleDesktop
+Icon?
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# ========================
+# Editors & IDEs
+# ========================
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# JetBrains (IntelliJ, WebStorm, PyCharm, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Vim / Neovim
+*.swp
+*.swo
+*~
+.netrwhist
+Session.vim
+
+# Emacs
+*~
+\#*\#
+.\#*
+.dir-locals.el
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# TextMate
+*.tmproj
+*.tmproject
+.tm_properties
+
+# ========================
+# Languages & Runtimes
+# ========================
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.npm
+.yarn/cache
+.yarn/unplugged
+.pnp.*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+.eggs/
+pip-log.txt
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+
+# Ruby
+*.gem
+*.rbc
+.bundle/
+vendor/bundle/
+.rbenv-version
+.ruby-version
+
+# Go
+*.exe
+*.test
+vendor/
+
+# Rust
+target/
+Cargo.lock   # remove this line if you want to track it in apps
+
+# Java / Kotlin / Scala
+*.class
+*.jar
+*.war
+*.ear
+.gradle/
+build/
+.mvn/
+
+# Swift / Xcode
+*.xcuserstate
+xcuserdata/
+DerivedData/
+*.xcworkspace/xcuserdata/
+*.moved-aside
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+
+# ========================
+# Environment & Secrets
+# ========================
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+*.p12
+*.pfx
+secrets.json
+credentials.json
+
+# ========================
+# Logs & Temp Files
+# ========================
+*.log
+*.logs
+*.tmp
+*.temp
+*.bak
+*.orig
+*.pid
+*.seed
+*.pid.lock
+
+# ========================
+# OS — misc
+# ========================
+
+# Linux
+.fuse_hidden*
+.nfs*
+
+# Windows (in case of cross-platform repos)
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ========================
+# Tools & Misc
+# ========================
+.vagrant/
+.terraform/
+*.tfstate
+*.tfstate.backup
+.direnv/
+.tool-versions   # asdf
+.nvmrc           # if you prefer not to track

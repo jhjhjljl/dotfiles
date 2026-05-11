@@ -1,0 +1,58 @@
+"ui.background" = {}  # Transparent background
+"ui.window" = { fg = "dim" }
+"ui.gutter" = { fg = "dim" }
+
+"ui.text" = { fg = "fg" }
+"ui.text.focus" = { bg = "sel", fg = "fg" }
+"ui.text.info" = { fg = "fg", bg = "overlay" }
+
+"ui.cursor" = { bg = "dim", fg = "bg" }
+"ui.cursor.primary" = { bg = "dim", fg = "bg" }
+"ui.cursor.match" = { modifiers = ["dim"] }
+
+"ui.selection" = { bg = "sel" }
+"ui.selection.primary" = { bg = "sel-bright" }
+"ui.cursorline.primary" = { bg = "line" }
+
+"ui.linenr" = { fg = "dim" }
+"ui.linenr.selected" = { fg = "fg" }
+
+"ui.virtual.indent-guide" = { fg = "border" }
+"ui.virtual.inlay-hint" = { fg = "dim", bg = "overlay" }
+"ui.virtual.jump-label" = { fg = "fg" }
+
+"ui.statusline" = { fg = "fg", bg = "bg" }
+"ui.statusline.inactive" = { fg = "dim", bg = "bg" }
+"ui.statusline.normal" = { bg = "dim", fg = "bg" }
+"ui.statusline.insert" = { bg = "dim", fg = "bg" }
+"ui.statusline.select" = { bg = "dim", fg = "bg" }
+
+"ui.menu" = { bg = "overlay", fg = "fg" }
+"ui.menu.selected" = { bg = "sel" }
+"ui.menu.scroll" = { fg = "dim" }
+
+"ui.popup" = { bg = "overlay", fg = "fg" }
+"ui.help" = { bg = "overlay", fg = "fg" }
+
+"comment" = { fg = "dim", modifiers = ["italic"] }
+
+"diagnostic.warning" = { underline = { color = "fg", style = "curl" } }
+"diagnostic.error" = { underline = { color = "fg", style = "curl" } }
+"diagnostic.info" = { underline = { color = "dim", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "dim", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+"diff.plus" = "dim"
+"diff.minus" = "dim"
+"diff.delta" = "dim"
+
+[palette]
+bg         = "#000000"
+overlay    = "#111111"
+line       = "#0a0a0a"
+sel        = "#222222"
+sel-bright = "#303030"
+border     = "#2a2a2a"
+dim        = "#606060"
+fg         = "#f4f4f4"

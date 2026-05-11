@@ -1,0 +1,7 @@
+[language-server.emmet-lsp]
+command = "emmet-language-server"
+args = ["--stdio"]
+
+[[language]]
+name = "html"
+language-servers = ["emmet-lsp"]
