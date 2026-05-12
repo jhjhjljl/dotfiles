@@ -1,0 +1,20 @@
+{
+	"color_scheme": "Monokai Pro.sublime-color-scheme",
+	"font_face": "SF Mono",
+	"font_size": 14,
+	"font_options": ["no_italic", "no_bold"],
+	"draw_indent_guides": false,
+	"trim_trailing_white_space_on_save": "all",
+	"ensure_newline_at_eof_on_save": true,
+	"auto_complete_commit_on_tab": true,
+	"theme": "Adaptive.sublime-theme",
+	"animation_enabled": false,
+	"ignored_packages": [
+	],
+	"index_files": false,
+	"mini_diff": false,
+	"show_tab_close_buttons": false,
+	"hide_tab_scrolling_buttons": true,
+	"enable_tab_scrolling": false,
+	"hot_exit": "disabled",
+}

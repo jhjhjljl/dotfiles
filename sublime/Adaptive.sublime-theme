@@ -1,0 +1,13 @@
+// Documentation at https://www.sublimetext.com/docs/themes.html
+{
+	"variables":
+	{
+	},
+	"rules":
+	[
+		{
+            "class": "new_tab_button",
+            "layer0.opacity": 0.0
+        }
+	]
+}
