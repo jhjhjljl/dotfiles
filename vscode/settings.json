@@ -11,14 +11,17 @@
     "editor.fontFamily": "SF Mono, Menlo, Monaco, 'Courier New', monospace",
     "editor.scrollbar.horizontal": "hidden",
     "editor.scrollbar.vertical": "hidden",
-    "workbench.statusBar.visible": false,
     "editor.guides.indentation": false,
-    "workbench.colorTheme": "FlatUI Dark",
+    "workbench.colorTheme": "Night Owl (No Italics)",
     "editor.renderLineHighlight": "none",
     "editor.occurrencesHighlight": "off",
     "chat.disableAIFeatures": true,
     "workbench.iconTheme": "vs-minimal",
     "editor.acceptSuggestionOnEnter": "off",
     "terminal.integrated.initialHint": false,
-    "editor.stickyScroll.enabled": false
+    "editor.stickyScroll.enabled": false,
+    "workbench.editor.empty.hint": "hidden",
+    "makefile.configureOnOpen": true,
+    "terminal.integrated.stickyScroll.enabled": false,
+    "terminal.integrated.enableMultiLinePasteWarning": "never"
 }
