@@ -20,7 +20,7 @@ vim.cmd("highlight EndOfBuffer guibg=NONE ctermbg=NONE")
 vim.cmd("highlight MatchParen guibg=NONE guifg=NONE gui=NONE")
 
 
--- plugins 
+-- plugins
 vim.pack.add{
     { src = "https://github.com/nvim-lua/plenary.nvim" },
     { src = "https://github.com/nvim-telescope/telescope.nvim" },
@@ -37,7 +37,7 @@ require("telescope").setup{
     defaults = {
         mappings = {
             i = {
-                ["<Esc>"] = require("telescope.actions").close 
+                ["<Esc>"] = require("telescope.actions").close
             }
         }
     }
