@@ -9,10 +9,8 @@ vim.opt.writebackup = false
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.opt.clipboard = "unnamedplus"
-vim.o.smoothscroll = true
 vim.o.mouse = "a"
 vim.g.mapleader = " "
-vim.keymap.set("n", "<Esc>", ":nohlsearch<CR>")
 vim.keymap.set("n", "<leader><Up>", ":m .-2<CR>==")
 vim.keymap.set("n", "<leader><Down>", ":m .+1<CR>==")
 
