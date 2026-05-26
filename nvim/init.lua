@@ -1,5 +1,6 @@
 -- basics
 vim.opt.number = true
+vim.opt.wrap = false
 vim.opt.wrap = true
 vim.opt.linebreak = true
 vim.opt.breakindent = true
@@ -37,6 +38,8 @@ require("telescope").setup{
     defaults = {
         mappings = {
             i = {
+                ["<C-j>"] = require('telescope.actions').move_selection_next,
+                ["<C-k>"] = require('telescope.actions').move_selection_previous,
                 ["<Esc>"] = require("telescope.actions").close 
             }
         }
@@ -91,6 +94,9 @@ vim.opt.updatetime = 500
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 local config = {
+    git = {
+        enable = false
+    },
     sort = {
         sorter = "case_sensitive",
     },
