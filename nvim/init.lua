@@ -1,10 +1,11 @@
 -- basics
 vim.opt.number = true
+vim.opt.relativenumber = true
 vim.opt.wrap = true
 vim.opt.linebreak = true 
 vim.opt.breakindent = true 
 vim.opt.backup = false
-vim.opt.swapfile = false
+vim.opt.swapfile = false 
 vim.opt.writebackup = false
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
