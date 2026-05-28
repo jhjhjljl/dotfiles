@@ -24,7 +24,8 @@ vim.pack.add{
     { src = "https://github.com/hrsh7th/nvim-cmp" },
     { src = "https://github.com/hrsh7th/cmp-nvim-lsp" },
     { src = "https://github.com/nvim-tree/nvim-tree.lua" },
-    { src = "https://github.com/neanias/everforest-nvim" }
+    { src = "https://github.com/neanias/everforest-nvim" },
+    { src = "https://github.com/seblyng/roslyn.nvim" }
 }
 
 
@@ -60,7 +61,9 @@ require('nvim-autopairs').setup({
 -- lsp and autocompletion
 vim.lsp.enable("pyrefly")
 vim.lsp.enable("clangd")
+vim.lsp.enable("roslyn")
 vim.opt.signcolumn = "yes"
+
 
 local cmp = require("cmp")
 cmp.setup({
