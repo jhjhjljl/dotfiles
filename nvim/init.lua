@@ -1,6 +1,5 @@
 -- basics
 vim.opt.number = true
-vim.opt.relativenumber = true
 vim.opt.wrap = true
 vim.opt.linebreak = true 
 vim.opt.breakindent = true 
@@ -18,6 +17,7 @@ vim.keymap.set("n", "<leader><Down>", ":m .+1<CR>==")
 
 -- plugins 
 vim.pack.add{
+    { src = "https://github.com/sainnhe/everforest" },
     { src = "https://github.com/nvim-lua/plenary.nvim" },
     { src = "https://github.com/nvim-telescope/telescope.nvim" },
     { src = "https://github.com/neovim/nvim-lspconfig" },
@@ -25,7 +25,6 @@ vim.pack.add{
     { src = "https://github.com/hrsh7th/nvim-cmp" },
     { src = "https://github.com/hrsh7th/cmp-nvim-lsp" },
     { src = "https://github.com/nvim-tree/nvim-tree.lua" },
-    { src = "https://github.com/neanias/everforest-nvim" },
     { src = "https://github.com/seblyng/roslyn.nvim" }
 }
 
@@ -63,6 +62,26 @@ require('nvim-autopairs').setup({
 vim.lsp.enable("pyrefly")
 vim.lsp.enable("clangd")
 vim.lsp.enable("roslyn")
+vim.lsp.config("emmet", {
+    cmd = { "emmet-language-server", "--stdio" },
+    filetypes = { "html", "htmldjango" }
+})
+vim.lsp.enable("emmet")
+vim.lsp.config("css", {
+    cmd = { "vscode-css-language-server", "--stdio" },
+    filetypes = { "css" }
+})
+vim.lsp.enable("css")
+vim.lsp.config("typescript", {
+    cmd = { "typescript-language-server", "--stdio" },
+    filetypes = { 
+        "typescript", 
+        "javascript", 
+        "typescriptreact", 
+        "javascriptreact" 
+    }
+})
+vim.lsp.enable("typescript")
 vim.opt.signcolumn = "yes"
 
 
@@ -83,13 +102,6 @@ vim.api.nvim_create_autocmd("CursorHold", {
         vim.diagnostic.open_float(nil, { focus = false })
     end,
 })
-
-vim.api.nvim_create_autocmd("CursorHoldI", {
-    callback = function()
-        vim.lsp.buf.signature_help()
-    end,
-})
-
 vim.opt.updatetime = 500
 
 
