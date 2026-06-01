@@ -29,6 +29,7 @@ vim.pack.add{
 
 
 -- theme
+
 vim.cmd("colorscheme everforest")
 
 
