@@ -12,6 +12,8 @@ vim.o.mouse = "a"
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader><Up>", ":m .-2<CR>==")
 vim.keymap.set("n", "<leader><Down>", ":m .+1<CR>==")
+vim.keymap.set({"n", "v"}, "d", '"_d')
+vim.keymap.set("n", "x", '"_x')
 
 
 -- plugins 
@@ -59,19 +61,25 @@ require('nvim-autopairs').setup({
 
 
 -- lsp and autocompletion
-vim.lsp.enable("pyrefly")
+vim.lsp.config("*", {
+    root_markers = { ".git" }
+})
 vim.lsp.enable("clangd")
 vim.lsp.enable("roslyn")
+vim.lsp.enable("pyrefly")
+
 vim.lsp.config("emmet", {
     cmd = { "emmet-language-server", "--stdio" },
     filetypes = { "html", "htmldjango" }
 })
 vim.lsp.enable("emmet")
+
 vim.lsp.config("css", {
     cmd = { "vscode-css-language-server", "--stdio" },
     filetypes = { "css" }
 })
 vim.lsp.enable("css")
+
 vim.lsp.config("typescript", {
     cmd = { "typescript-language-server", "--stdio" },
     filetypes = { 
@@ -82,6 +90,7 @@ vim.lsp.config("typescript", {
     }
 })
 vim.lsp.enable("typescript")
+
 vim.opt.signcolumn = "yes"
 
 

@@ -4,7 +4,6 @@ fpath=(/Users/jihoonlee/.docker/completions $fpath)
 autoload -Uz compinit
 compinit
 # End of Docker CLI completions
-PROMPT='%~ %% '
-if [ -z "$TMUX" ]; then
-    tmux attach || tmux
-fi
+PROMPT="%~ %% "
+[ -z "$TMUX" ] && tmux new-session -A -s default 
+
