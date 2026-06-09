@@ -31,7 +31,6 @@ vim.pack.add{
 
 
 -- theme
-
 vim.cmd("colorscheme everforest")
 
 
@@ -56,7 +55,8 @@ vim.keymap.set("n", "<leader>h", builtin.help_tags)
 
 -- autopairs
 require('nvim-autopairs').setup({
-    disable_filetype = { "TelescopePrompt" , "vim" }
+    disable_filetype = { "TelescopePrompt" , "vim" },
+    map_cr = false
 })
 
 
@@ -137,4 +137,13 @@ local config = {
 }
 require("nvim-tree").setup(config)
 vim.keymap.set("n", "<leader>b", ":NvimTreeToggle<CR>")
+
+
+-- weird python bracket opening fix
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "python",
+    callback = function()
+        vim.opt_local.indentexpr = "python#GetIndent(v:lnum,1)"
+    end,
+})
 
