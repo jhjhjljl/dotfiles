@@ -55,8 +55,7 @@ vim.keymap.set("n", "<leader>h", builtin.help_tags)
 
 -- autopairs
 require('nvim-autopairs').setup({
-    disable_filetype = { "TelescopePrompt" , "vim" },
-    map_cr = false
+    disable_filetype = { "TelescopePrompt" , "vim" }
 })
 
 
